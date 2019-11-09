@@ -33,6 +33,7 @@ public class HandControlTriggersEditor : Editor
 
         leftObjTag = serializedObject.FindProperty("leftObjTag");
         rightObjTag = serializedObject.FindProperty("rightObjTag");
+
     }
 
     public override void OnInspectorGUI()
@@ -46,22 +47,22 @@ public class HandControlTriggersEditor : Editor
         if (h.hand == HandControlTriggers.Hands.left)
         {
             EditorGUILayout.PropertyField(leftHolster, new GUIContent("Left Holster"));
-            EditorGUILayout.PropertyField(leftGrip_Input, new GUIContent("Left Grip Input"));
-            EditorGUILayout.PropertyField(left_CanGrab, new GUIContent("Left Can Grab"));
-            EditorGUILayout.PropertyField(leftEnter, new GUIContent("Left Entered"));
-            EditorGUILayout.PropertyField(leftCarrying, new GUIContent("Left Carrying"));
-            EditorGUILayout.PropertyField(leftObj, new GUIContent("Left Object"));
-            EditorGUILayout.PropertyField(leftObjTag, new GUIContent("Left Object Tag"));
+            //EditorGUILayout.PropertyField(leftGrip_Input, new GUIContent("Left Grip Input"));
+            //EditorGUILayout.PropertyField(left_CanGrab, new GUIContent("Left Can Grab"));
+            //EditorGUILayout.PropertyField(leftEnter, new GUIContent("Left Entered"));
+            //EditorGUILayout.PropertyField(leftCarrying, new GUIContent("Left Carrying"));
+            //EditorGUILayout.PropertyField(leftObj, new GUIContent("Left Object"));
+            //EditorGUILayout.PropertyField(leftObjTag, new GUIContent("Left Object Tag"));
         }
         else
         {
             EditorGUILayout.PropertyField(rightHolster, new GUIContent("Right Holster"));
-            EditorGUILayout.PropertyField(rightGrip_Input, new GUIContent("Right Grip Input"));
-            EditorGUILayout.PropertyField(right_CanGrab, new GUIContent("Right Can Grab"));
-            EditorGUILayout.PropertyField(rightEnter, new GUIContent("Right Entered"));
-            EditorGUILayout.PropertyField(rightCarrying, new GUIContent("Right Carrying"));
-            EditorGUILayout.PropertyField(rightObj, new GUIContent("Right Object"));
-            EditorGUILayout.PropertyField(rightObjTag, new GUIContent("Right Object Tag"));
+            //EditorGUILayout.PropertyField(rightGrip_Input, new GUIContent("Right Grip Input"));
+            //EditorGUILayout.PropertyField(right_CanGrab, new GUIContent("Right Can Grab"));
+            //EditorGUILayout.PropertyField(rightEnter, new GUIContent("Right Entered"));
+            //EditorGUILayout.PropertyField(rightCarrying, new GUIContent("Right Carrying"));
+            //EditorGUILayout.PropertyField(rightObj, new GUIContent("Right Object"));
+            //EditorGUILayout.PropertyField(rightObjTag, new GUIContent("Right Object Tag"));
         }
         serializedObject.ApplyModifiedProperties();
         //base.OnInspectorGUI();
